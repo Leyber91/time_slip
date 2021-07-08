@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time slip</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <script src="/systemCanvas.js" type = "text/javascript"></script>
+    <script src="/auxiliarStyleFunctions.js" type = "text/javascript"></script>
+</head>
+
+<body>
+
+<!--HOME PAGE-->
+<!--HEADER. FUTURE TIME MEASUREMENT CLOCK-->
+<header>
+    <button class='button' id='localStorageReset'>Local storage Reset</button>
+</header>
+
+<!--MAIN PAGE-->
+<canvas id="canvas"> </canvas>
+<!--<video autoplay muted loop id="myVideo"> <source src="/ImagesVideos/HomeScreenBackground.mp4" type="video/mp4"></video>-->
+<section class = "terminalScreen" id="storyPage">
+<div class="container">
+    <div id="scenario"></div>
+    <div id="optionPath" class="buttonn-flex-box"></div>
+</div>
+</section>
+
+<!--SCORE PAGE-->
+<section class = "terminalScreen" id="scorePage"></section>
+
+<!--CONTROLLER -->
+<footer id="controler">
+<!-- <button id="finishAdventureButton">Finish Timeline</button>-->
+
+</footer>
+<script type ="module" src="/main.js"></script>
+<script type ="module" src="/storyModules/storyObjectArray.js"></script>
+<script type ="module" src="/storage.js"></script>
+<script type ="module" src="/buttons.js"></script>
+<script type ="module" src="/timeDilationEffect.js"></script>
+<script type ="module" src="/storyOptionConstructor.js"></script>
+</body>
+</html>
